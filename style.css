@@ -1,0 +1,35 @@
+h1 {
+  color: black;
+  background-color: skyblue;
+  text-align: center;
+
+}
+body {
+  background-color: moccasin;
+
+}
+#header-background{
+  width: 1200px;
+  height:300px;
+  background:url('https://gorrtourdivide2017.files.wordpress.com/2017/07/cropped-20170628_115504.jpg');
+}
+#logo {
+  float: center;
+}
+#guitar {
+  display: grid;
+  float: left;
+  height: 430px;
+  width: 550px;
+  margin-right: 10px;
+}
+#oysterpic {
+  height: 200px;
+}
+#oyster {
+  float: right;
+  height: 200px;
+}
+header {
+  margin-left: 150px;
+}
