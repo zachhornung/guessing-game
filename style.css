@@ -18,7 +18,7 @@ body {
 }
 #guitar {
   display: grid;
-  float: left;
+  float: right;
   height: 430px;
   width: 550px;
   margin-right: 10px;
