@@ -1,4 +1,5 @@
 'use strict';
+
 var userName = prompt('Hello, welcome to my website! What is your name?')
   alert('Welcome, ' + userName + '! Glad you stopped by!')
 var ca = 0
@@ -63,15 +64,7 @@ if (oyster == 'YES' || oyster == 'Y'){
 }
 oyster();
 
-// var oyster = prompt('Did I farm oysters, yes or no?').toUpperCase()
-// if (oyster == 'YES' || oyster == 'Y'){
-//   // console.log('That\'s correct!')
-//   alert('That\'s correct!');
-//   ca++;
-// } else if (oyster == 'NO' || oyster == 'N'){
-//   // console.log('Sorry, that is not true')
-//   alert('Sorry, that is not true');
-// }
+
 
 
 function ai(){
@@ -87,23 +80,6 @@ if (ai == 'YES' || ai == 'Y'){
 }
 }
 ai();
-
-// for (var i = 0; i <=3; i++){
-// let userInput = prompt('Guess a number between 1 and 100')
-// let actualUserInput = parseInt(userInput)
-// let correctAnswer = 51
-//   while (actualUserInput < 1 || actualUserInput > 100 || actualUserInput == false){
-//     if (actualUserInput < 1 || actualUserInput > 100){ 
-//       userInput = prompt('Sorry, thats not a valid input for my small computer brain. Please guess a number between 1 and 100')
-//       actualUserInput = parseInt(userInput)
-//     }
-//     else if (actualUserInput == false){
-//      userInput = prompt('That was not a number. Please enter an actual number')
-//      actualUserInput = parseInt(userInput)
-//     }
-    
-//   }
-// }
 
 function numberGame(){
   let answer = 51
@@ -125,21 +101,24 @@ numberGame();
 
 function bandGame(){
   let arrayOfAnswers = ['meshuggah', 'opeth', 'nick  drake', 'ahab', 'bathory', 'behemoth', 'bolt thrower', 'the contortionist', 'dead can dance', 'emperor', 'ennio morricone']
-outerloop:
+
 for (let i = 6; i >= 1; i--){
   var bandAnswer = prompt('What is one of my favorite bands? You have ' + i + ' guesses ramaining')
   for (let a = 0; a < arrayOfAnswers.length; a++){
     if (bandAnswer == arrayOfAnswers[a]){
-      alert('you got it right');
       ca++;
-      break outerloop;
-    }
+      alert('you got it right');
+      return ca;
+      } 
+    } 
   }
-  if (i == 1){
+    if (i == 1){
     alert('thats your last try! the correct answers were meshuggah, opeth, nick drake, ahab, bathory, behemoth, bolt thrower, the contortionist, dead can dance, emperor, and ennio morricone.')
-  }return ca;
+    }
+  
+  
 }
-}
+
 bandGame();
 alert('You got ' + ca + ' answers correct!')
 alert('Thanks again for stopping by, ' + userName + '! Hope to see you again soon!');
